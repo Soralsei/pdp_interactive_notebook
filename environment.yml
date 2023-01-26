@@ -3,6 +3,15 @@ channels:
 dependencies:
   - qgis=3.18
   - websockify
+  - kaleido-core
+  - plotly
+  - pandas
+  - numpy
+  - scikit-learn
+  - scipy
+  - chart-studio
+  - openpyxl
+  - pyppeteer
   - pip
   - pip:
       - jupyter-remote-desktop-proxy
