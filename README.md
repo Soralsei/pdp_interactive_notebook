@@ -1,78 +1,58 @@
-# Template for Linux Desktop Apps on Binder / JupyterHub
+# Sleep Content Analysis (or any other construct)
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/yuvipanda/binder-desktop-app-template/HEAD?urlpath=desktop)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Soralsei/pdp.interactive_notebook/master)
 
-Generate a Git repository that can run any Linux GUI application in
-the browser via [mybinder.org](https://mybinder.org) or any JupyterHub
-from this template repository!
+## Description
+The data and notebook contained in this repository foster the reproducibility of the following paper: 
 
-Uses [jupyter-remote-desktop-proxy](https://github.com/jupyterhub/jupyter-remote-desktop-proxy)
-to work.
+* Gauld C, Martin VP, Richaud A, Bailleul S, Lucie V, Perromat JL, et al. Systematic Item Content and Overlap Analysis of Self-reported Multiple Sleep Disorders Screening Questionnaires in Adults. *Journal of Clinical Medicine*. 2022 (Under review) 
 
-## How to use this repo
 
-### 1. Create a new repo using this as a template
+Furthermore, to give the community a useful tool that can be used by any clinicians without any knowledge of coding, we set up a 👉[Binder repository](https://mybinder.org/v2/gh/Soralsei/pdp.interactive_notebook/master)👈, guiding the reader to run the code in a fully online environemnent. This code does not limit to Sleep content analysis and can be ran on any dataset formatted the following way.
 
-Use the [Use this template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template#creating-a-repository-from-a-template)
-button on GitHub. Use a descriptive name representing the
-GUI app you are running / demoing. You can then follow the rest of
-the instructions in this README from your newly created repository.
 
-### 2. Install the application you want
+## File formatting
+* Excel file, uploaded to binder;
+* The three first columns must be respextively:
+   * the category of symptoms (put an empty first columns in your file if you do not categorize symptoms)
+   * the abbreviations that will be plotted on the radial figure
+   * the name of the symptoms
+* Each columns represent a questionnaire or a reference classification
+* Each cell contains either 
+   * 0 if the symptoms is not in the questionnaire
+   * 1 if the symptoms is *specific* in the questionnaire (i.e. the symptom has been found in an item of the questionnaire referring only to this symptom)
+   * 2 if the symptom is *compound* in the questionnaire (i.e. the symptom has been found in an item of the questionnaire referring to at least two symptoms)
 
-First the GUI application you want needs to be actually installed in
-the image. There are three main ways to do this:
 
-#### From `apt` via `apt.txt`
+Example : 
 
-Many common Linux GUI applications are available to be installed from
-the [Ubuntu Apt Repositories](https://packages.ubuntu.com). Adding their
-name to `apt.txt` file is usually enough to get them installed. Note that
-by default right now, the base image used by Binder and repo2docker is
-using Ubuntu 18.04 Bionic, which can be a bit outdated.
+| Category | Ab  | Symptom | SDQ | ICSD | ASQ | GSAQ | HSDQ | PSQI | Sleep50 | DSM | SDS-CL-25 | ISDI | SDS-CL-17 | BNSQ | OSQ | SSC |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| SLEEPINESS SYMPTOMS | S01 | Daytime sleepiness | 1   | 1   | 1   | 2   | 2   | 1   | 1   | 1   | 2   | 1   | 2   | 1   | 1   | 1   |
+| SLEEPINESS SYMPTOMS | S02 | Lapses into sleep | 2   | 1   | 0   | 2   | 1   | 0   | 1   | 1   | 1   | 1   | 1   | 1   | 0   | 1   |
+| SLEEPINESS SYMPTOMS | S03 | Long sleep time | 1   | 1   | 2   | 0   | 2   | 2   | 0   | 1   | 0   | 0   | 0   | 2   | 2   | 0   |
+| SLEEPINESS SYMPTOMS | S04 | Sleep inertia | 1   | 1   | 0   | 0   | 2   | 0   | 0   | 1   | 0   | 1   | 0   | 1   | 0   | 0   |
+| INSOMNIA SYMPTOMS | S05 | Insomnia early | 1   | 1   | 2   | 0   | 0   | 2   | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   |
 
-#### From `conda` via `environment.yml`
 
-A lot of scientific GUI applications are also packaged via [conda-forge]
-and can be installed by editing the `environment.yml` file to include them.
-For example, [qgis](https://anaconda.org/conda-forge/qgis) is a popular
-Geospatial GUI application, and is available on conda-forge. You can install
-it by adding `qgis` under `dependencies` in `environment.yml`.
+## HTML files
+The analyse files corresponding to the [current study](https://raw.githack.com/vincentpmartin/sleep-content-analysis/main/results_notebook_html/GauldMartin2022.html) and of the [seminal paper from Eiko Fried (2017)](https://raw.githack.com/vincentpmartin/sleep-content-analysis/main/results_notebook_html/Fried2017.html) are available in this repository. <br>
+The figures and tables produced by this code are available in the [./tables_and_figures](./tables_and_figures) folder. 
 
-#### Manually, with a `postBuild` script
+If you want to customize the code or run the analysis on your own data, please read 👇 next Section 👇
 
-Sometimes the application you want is not available in apt or conda-forge,
-or at least not the version you want. You've to manually install them
-by writing a script in [`postBuild`](https://repo2docker.readthedocs.io/en/latest/config_files.html#postbuild-run-code-after-installing-the-environment)
-file to download the app manually (wia `wget` maybe) and extract the executable
-application somewhere. You don't have `root` access here, so some of the things
-you need to do might be limited. Consider writing your own `Dockerfile` instead.
+## How to use our code
 
-### 3. Setup a desktop shortcut to your app
+* If you are are familiar with Jupyter Notebooks, just download the notebook and the excel file, and *voila*.
 
-When the repo is launched on Binder / desktop is used on JupyterHub, a shortcut
-that users can click to launch your app is pretty nice. This template contains
-sample `app.desktop` file you can use to setup this shortcut. Our `start` script
-will automatically make sure that any `.desktop` files (which is how most Linux
-desktops indicate a shortcut file) are put on the user Desktop.
+* If you do not even know what a Jupyer Notebook is, please click on 👉[this link](https://mybinder.org/v2/gh/vincentpmartin/sleep-content-analysis/main?labpath=jupyter_notebook_sleep_content_analysis.ipynb)👈, wait a few second for the binder server to launch, and follows the instructions in the notebook. 
 
-1. Rename the file from `app.desktop` to `<your-app-name>.desktop`
-2. Open the file, and fill in values for `Name`, `Exec` and optionally `Icon`
-3. Commit the file
+## Contact
+If you have trouble reproducing our results or launching the code on your own data, do not hesitate to contact us !
+* vincentpmartin [at] protonmail.com
 
-### 4. Modify the Binder Badge in the README.md
-
-The 'Launch on Binder' badge in this README points to the template repository.
-You should modify it to point to your own repository. Keep the `urlpath=desktop`
-parameter intact - that is what makes sure your repo will launch directly into
-a Linux desktop.
-
-### 5. Cleanup the README.md to document your application
-
-Finally, cleanup your README.md to document the application in your repo! Users
-of your repo want to see the application, not instructions on how to setup the repo :)
-
-## Inspiration
-
-Inspriation to make this particular template repository comes from conversation
-with my friend [Sanjay Bhangar](https://twitter.com/sanjaybhangar).
+## Reference
+If you use this script, please cite the following paper : 
+* Gauld C, Martin VP, Richaud A, Bailleul S, Lucie V, Perromat JL, et al. Systematic Item Content and Overlap Analysis of Self-reported Multiple Sleep Disorders Screening Questionnaires in Adults. *Journal of Clinical Medicine*. 2022 (Under review)
+ 
+---
