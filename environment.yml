@@ -13,5 +13,6 @@ dependencies:
   - openpyxl
   - pyppeteer
   - pip
+  - pyqt
   - pip:
-      - jupyter-remote-desktop-proxy
+      - jupyter-desktop-server
