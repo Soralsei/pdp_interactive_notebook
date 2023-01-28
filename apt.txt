@@ -1,5 +1,5 @@
 # Baseline packages to get X working
 dbus-x11
 xorg
-xvfb
-xserver-xephyr
+
+lxqt
