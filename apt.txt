@@ -2,6 +2,4 @@
 dbus-x11
 xorg
 xubuntu-icon-theme
-
-# Desktop environment so people can navigate
-xfce4
+xvfb

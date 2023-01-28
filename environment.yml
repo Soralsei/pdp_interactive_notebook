@@ -15,4 +15,4 @@ dependencies:
   - pip
   - pyqt
   - pip:
-      - jupyter-remote-desktop-proxy
+      - pyvirtualdisplay
