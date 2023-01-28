@@ -3,4 +3,8 @@ dbus-x11
 xorg
 breeze-icon-theme
 
-lxqt
+# Desktop environment
+lxde
+
+# Everyone needs a browser
+firefox
