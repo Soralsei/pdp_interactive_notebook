@@ -15,4 +15,4 @@ dependencies:
   - pip
   - pyqt
   - pip:
-      - jupyter-desktop-server
+      - jupyter-remote-desktop-proxy
