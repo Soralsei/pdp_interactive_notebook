@@ -2,3 +2,4 @@
 dbus-x11
 xorg
 xvfb
+xserver-xephyr
