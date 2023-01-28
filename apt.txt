@@ -1,5 +1,6 @@
 # Baseline packages to get X working
 dbus-x11
 xorg
+breeze-icon-theme
 
 lxqt
