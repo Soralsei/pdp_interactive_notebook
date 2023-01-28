@@ -1,10 +1,10 @@
 # Baseline packages to get X working
 dbus-x11
 xorg
-breeze-icon-theme
+xubuntu-icon-theme
 
 # Desktop environment
-lxde
+xfce4
 
 # Everyone needs a browser
 firefox
