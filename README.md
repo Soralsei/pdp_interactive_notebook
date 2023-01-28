@@ -1,6 +1,6 @@
 # Sleep Content Analysis (or any other construct)
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Soralsei/pdp_interactive_notebook/HEAD)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Soralsei/pdp_interactive_notebook/HEAD?urlpath=desktop)
 
 ## Description
 The data and notebook contained in this repository foster the reproducibility of the following paper: 
@@ -8,7 +8,7 @@ The data and notebook contained in this repository foster the reproducibility of
 * Gauld C, Martin VP, Richaud A, Bailleul S, Lucie V, Perromat JL, et al. Systematic Item Content and Overlap Analysis of Self-reported Multiple Sleep Disorders Screening Questionnaires in Adults. *Journal of Clinical Medicine*. 2022 (Under review) 
 
 
-Furthermore, to give the community a useful tool that can be used by any clinicians without any knowledge of coding, we set up a 👉[Binder repository](https://mybinder.org/v2/gh/Soralsei/pdp_interactive_notebook/HEAD)👈, guiding the reader to run the code in a fully online environemnent. This code does not limit to Sleep content analysis and can be ran on any dataset formatted the following way.
+Furthermore, to give the community a useful tool that can be used by any clinicians without any knowledge of coding, we set up a 👉[Binder repository](https://mybinder.org/v2/gh/Soralsei/pdp_interactive_notebook/HEAD?urlpath=desktop)👈, guiding the reader to run the code in a fully online environemnent. This code does not limit to Sleep content analysis and can be ran on any dataset formatted the following way.
 
 
 ## File formatting
