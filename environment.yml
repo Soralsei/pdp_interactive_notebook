@@ -2,7 +2,7 @@ channels:
   - conda-forge
 dependencies:
   - websockify
-  - kaleido-core
+  - python-kaleido
   - plotly
   - pandas
   - numpy
