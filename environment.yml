@@ -11,7 +11,4 @@ dependencies:
   - chart-studio
   - openpyxl
   - pyppeteer
-  - pip
-  - pyqt
-  - pip:
-    - jupyter-remote-desktop-proxy
+  - ipywidgets
