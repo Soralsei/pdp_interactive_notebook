@@ -1,6 +1,6 @@
 # Sleep Content Analysis (or any other construct)
 
-[![Binder]([![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Soralsei/pdp_interactive_notebook/HEAD?urlpath=lab/tree/jupyter_notebook_sleep_content_analysis.ipynb))
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Soralsei/pdp_interactive_notebook/HEAD?urlpath=lab/tree/jupyter_notebook_sleep_content_analysis.ipynb))
 
 ## Description
 The data and notebook contained in this repository foster the reproducibility of the following paper: 
