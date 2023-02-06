@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448.07 373.91">
+    <defs>
+        <style>
+            .auto-init-icon-text{font-size:81.6px;stroke-width:3px;font-family:ArialRoundedMTBold, Arial
+            Rounded MT
+            Bold;letter-spacing:0.05em;}.auto-init-icon-text,.auto-init-play-icon,.auto-init-circular-arrow,.auto-init-circular-arrow-head{stroke:#000;}.auto-init-icon-text,.auto-init-circular-arrow{stroke-miterlimit:10;}.auto-init-play-icon,.auto-init-circular-arrow-head{stroke-linejoin:round;}.auto-init-play-icon{stroke-width:10px;}.auto-init-circular-arrow,.auto-init-circular-arrow-head{fill:none;stroke-linecap:round;stroke-width:24px;}</style>
+    </defs>
+    <g id="Layer_1" data-name="Layer 1">
+        <text class="auto-init-icon-text" transform="translate(244.18 289.86) scale(0.87 1)">INIT</text>
+    </g>
+    <g id="Layer_4" data-name="Layer 4">
+        <polygon class="auto-init-play-icon" points="204.68 127.38 264.68 187.38 204.68 247.38 204.68 127.38" />
+    </g>
+    <g id="Layer_3" data-name="Layer 3">
+        <path class="auto-init-circular-arrow"
+            d="M370.45,386a175.11,175.11,0,0,1-214.56,14.57A177.09,177.09,0,0,1,96,331.29a174.7,174.7,0,0,1-14.25-43.92"
+            transform="translate(-29.82 -68.62)" />
+        <path class="auto-init-circular-arrow-head"
+            d="M41.82,322.7a186.53,186.53,0,0,1,37.4-56.29C95.9,279.7,114,289,132.16,294.12"
+            transform="translate(-29.82 -68.62)" />
+        <path class="auto-init-circular-arrow"
+            d="M137.25,125.11a175.09,175.09,0,0,1,214.56-14.57,176.88,176.88,0,0,1,59.85,69.32,174.72,174.72,0,0,1,14.26,43.92"
+            transform="translate(-29.82 -68.62)" />
+        <path class="auto-init-circular-arrow-head"
+            d="M465.88,188.45a186.53,186.53,0,0,1-37.4,56.29c-16.68-13.29-34.75-22.59-52.94-27.71"
+            transform="translate(-29.82 -68.62)" />
+    </g>
+</svg>
