@@ -2,6 +2,7 @@
 
 set -e
 
+echo "Installing auto_init labextension..."
 cd /srv/conda/envs/notebook/share/jupyter/labextensions
 mv $HOME/auto_init/auto_init/labextension ./auto_init
 echo "Done"

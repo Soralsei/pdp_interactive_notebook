@@ -9,7 +9,7 @@ node_modules/
 *.tsbuildinfo
 # auto_init/labextension
 # Version file is handled by hatchling
-# auto_init/_version.py
+auto_init/_version.py
 
 # Integration tests
 ui-tests/test-results/
