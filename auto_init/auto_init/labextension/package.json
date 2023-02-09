@@ -95,6 +95,11 @@
   },
   "jupyterlab": {
     "extension": true,
-    "outputDir": "auto_init/labextension"
+    "outputDir": "auto_init/labextension",
+    "_build": {
+      "load": "static/remoteEntry.68abfc9a38880da14d86.js",
+      "extension": "./extension",
+      "style": "./style"
+    }
   }
 }

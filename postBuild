@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -e
+
+cd $HOME/conda/
+echo "Done"

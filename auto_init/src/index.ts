@@ -11,7 +11,6 @@ import { ToolbarButton } from "@jupyterlab/apputils";
 import { IMainMenu } from '@jupyterlab/mainmenu';
 import { Cell, MarkdownCell, CodeCell } from "@jupyterlab/cells";
 import { LabIcon } from "@jupyterlab/ui-components";
-// import { Menu } from '@lumino/widgets';
 
 import run_init_icon from "../style/init.svg";
 
