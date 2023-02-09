@@ -3,4 +3,5 @@
 set -e
 
 cd /srv/conda/envs/notebook/share/jupyter/labextensions
+mv $HOME/auto_init/auto_init .
 echo "Done"
