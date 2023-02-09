@@ -2,5 +2,5 @@
 
 set -e
 
-cd $HOME/conda/
+cd /srv/conda/envs/notebook/share/jupyter/labextensions
 echo "Done"
