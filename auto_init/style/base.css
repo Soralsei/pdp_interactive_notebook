@@ -6,16 +6,11 @@
 
 /*Pastille indiquant que la cellule est en auto init*/
 .auto_init-cell .CodeMirror::after{
-    background-color: slateblue;
+    background-color: rgb(145, 64, 244);
     display: block;
     padding: 3px;
-    content: 'Init';
-    font-size: small;
-    font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: aliceblue;
     position: absolute;
-    right: 25px;
-    bottom: 25px;
+    left: 5%;
+    bottom: 5%;
     border-radius: 50%;
 }
