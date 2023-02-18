@@ -5,12 +5,14 @@
 */
 
 /*Pastille indiquant que la cellule est en auto init*/
-.auto_init-cell .CodeMirror::after{
-    background-color: rgb(145, 64, 244);
+.auto_init-cell .jp-InputArea-prompt::after{
+    background-color: slateblue;
     display: block;
     padding: 3px;
+    content: ' ';
     position: absolute;
-    left: 5%;
-    bottom: 5%;
+    right: 15px;
+    top: 25px;
+    z-index: 1000;
     border-radius: 50%;
 }

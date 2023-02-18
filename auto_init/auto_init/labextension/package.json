@@ -97,7 +97,7 @@
     "extension": true,
     "outputDir": "auto_init/labextension",
     "_build": {
-      "load": "static/remoteEntry.8abc4547ca4aeb628c21.js",
+      "load": "static/remoteEntry.0396790b455bd373dba0.js",
       "extension": "./extension",
       "style": "./style"
     }
