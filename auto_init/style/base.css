@@ -11,8 +11,8 @@
     padding: 3px;
     content: ' ';
     position: absolute;
-    right: 15px;
-    top: 25px;
+    left: 9px;
+    top: 11px;
     z-index: 1000;
     border-radius: 50%;
 }
